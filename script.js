@@ -2,56 +2,48 @@ const dados = [
   {
     "categoria": "SMASH LANCHES",
     "itens": [
-      {"nome": "SMASH BURGUES", "preco": 12.00, "imagem": "https://i.imgur.com/8k2Qm1A.webp"},
-      {"nome": "SMASH SALADA", "preco": 14.00, "imagem": "https://i.imgur.com/9L4zP2B.webp"},
-      {"nome": "SMASH EGG", "preco": 15.00, "imagem": "https://i.imgur.com/7X3nC8D.webp"},
-      {"nome": "SMASH BACON", "preco": 16.00, "imagem": "https://i.imgur.com/5T1vE9F.webp"},
-      {"nome": "CHICKEN BACON", "preco": 17.00, "imagem": "https://i.imgur.com/3R6wG0H.webp"},
-      {"nome": "TROPICAL", "preco": 18.00, "imagem": "https://i.imgur.com/2Q9yJ1K.webp"},
-      {"nome": "SMASH TRIPLO", "preco": 22.00, "imagem": "https://i.imgur.com/1P8zL4M.webp"},
-      {"nome": "SMASH TUDO", "preco": 24.00, "imagem": "https://i.imgur.com/0O7xN5N.webp"}
+      {"nome": "SMASH BURGUES", "preco": 12.00, "desc": "Pão, 1 smash 90g, queijo e molho da casa", "imagem": "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?q=80&w=400"},
+      {"nome": "SMASH SALADA", "preco": 14.00, "desc": "Pão, 1 smash 90g, queijo, alface, tomate e molho", "imagem": "https://images.unsplash.com/photo-1572802419224-296b0aeee0d9?q=80&w=400"},
+      {"nome": "SMASH EGG", "preco": 15.00, "desc": "Pão, 1 smash 90g, queijo, ovo e molho especial", "imagem": "https://images.unsplash.com/photo-1594212699903-ec8a3eca50f5?q=80&w=400"},
+      {"nome": "SMASH BACON", "preco": 16.00, "desc": "Pão, 1 smash 90g, queijo, bacon crocante e molho", "imagem": "https://images.unsplash.com/photo-1550549298-42af2eda92ce?q=80&w=400"},
+      {"nome": "CHICKEN BACON", "preco": 17.00, "desc": "Pão, frango empanado, queijo, bacon e molho", "imagem": "https://images.unsplash.com/photo-1606756790138-261d2b8003d1?q=80&w=400"},
+      {"nome": "TROPICAL", "preco": 18.00, "desc": "Pão, 1 smash 90g, queijo, abacaxi, bacon e molho", "imagem": "https://images.unsplash.com/photo-1599466254910-1e85315b5036?q=80&w=400"},
+      {"nome": "SMASH TRIPLO", "preco": 22.00, "desc": "Pão, 3 smash 90g, 3 queijos e molho da casa", "imagem": "https://images.unsplash.com/photo-1585238343366-9e5c3abf7b6e?q=80&w=400"},
+      {"nome": "SMASH TUDO", "preco": 24.00, "desc": "Pão, 2 smash 90g, queijo, bacon, ovo, salada e molho", "imagem": "https://images.unsplash.com/photo-1615295854784-75e4bb998f1a?q=80&w=400"}
     ]
   },
   {
     "categoria": "CACHORRO QUENTE",
     "itens": [
-      {"nome": "DOG TRADICIONAL", "preco": 10.00, "imagem": "https://i.imgur.com/Z6aB2C.webp"},
-      {"nome": "DOG BACON", "preco": 12.00, "imagem": "https://i.imgur.com/Y5bD3D.webp"},
-      {"nome": "DOG VACA LOUCA", "preco": 15.00, "imagem": "https://i.imgur.com/X4cE4E.webp"}
+      {"nome": "DOG TRADICIONAL", "preco": 10.00, "desc": "Pão, salsicha, batata palha, milho e molhos", "imagem": "https://images.unsplash.com/photo-1627308595229-7830a5c91fe3?q=80&w=400"},
+      {"nome": "DOG BACON", "preco": 12.00, "desc": "Pão, salsicha, bacon, batata palha e molhos", "imagem": "https://images.unsplash.com/photo-1617196035154-1e7e6e28b0db?q=80&w=400"},
+      {"nome": "DOG VACA LOUCA", "preco": 15.00, "desc": "Pão, salsicha, carne moída, queijo e batata palha", "imagem": "https://images.unsplash.com/photo-1617196035154-1e7e6e28b0db?q=80&w=400"}
     ]
   },
   {
     "categoria": "COXINHA",
     "itens": [
-      {"nome": "COXINHA CARNE C/ OVO", "preco": 8.00, "imagem": "https://i.imgur.com/W3fF5F.webp"},
-      {"nome": "COXINHA FRANGO", "preco": 8.00, "imagem": "https://i.imgur.com/V2gG6G.webp"},
-      {"nome": "COXINHA PRESUNTO E QUEIJO", "preco": 9.00, "imagem": "https://i.imgur.com/U1hH7H.webp"},
-      {"nome": "COXINHA CARNE C/ CREAM CHEESE", "preco": 10.00, "imagem": "https://i.imgur.com/T0iI8I.webp"}
+      {"nome": "COXINHA CARNE C/ OVO", "preco": 8.00, "desc": "Massa crocante recheada com carne e ovo", "imagem": "https://images.unsplash.com/photo-1618898909019-010e24375bcb?q=80&w=400"},
+      {"nome": "COXINHA FRANGO", "preco": 8.00, "desc": "Massa crocante recheada com frango cremoso", "imagem": "https://images.unsplash.com/photo-1604908177453-7462950e6a3b?q=80&w=400"},
+      {"nome": "COXINHA PRESUNTO E QUEIJO", "preco": 9.00, "desc": "Massa crocante recheada com presunto e queijo", "imagem": "https://images.unsplash.com/photo-1618898909019-010e24375bcb?q=80&w=400"},
+      {"nome": "COXINHA CARNE C/ CREAM CHEESE", "preco": 10.00, "desc": "Massa crocante recheada com carne e cream cheese", "imagem": "https://images.unsplash.com/photo-1604908177453-7462950e6a3b?q=80&w=400"}
     ]
   },
   {
     "categoria": "RAP + PORÇÕES",
     "itens": [
-      {"nome": "RAP 10", "preco": 16.00, "imagem": "https://i.imgur.com/S9jJ9J.webp"},
-      {"nome": "FRANGO KFC", "preco": 18.00, "imagem": "https://i.imgur.com/R8kK0K.webp"},
-      {"nome": "BATATA FRITA", "preco": 12.00, "imagem": "https://i.imgur.com/Q7lL1L.webp"},
-      {"nome": "BATATA CHEDDAR E BACON", "preco": 18.00, "imagem": "https://i.imgur.com/P6mM2M.webp"}
-    ]
-  },
-  {
-    "categoria": "ADICIONAIS",
-    "itens": [
-      {"nome": "OVO", "preco": 2.00, "imagem": "https://i.imgur.com/O5nN3N.webp"},
-      {"nome": "BACON", "preco": 3.00, "imagem": "https://i.imgur.com/N4oO4O.webp"},
-      {"nome": "QUEIJO", "preco": 3.00, "imagem": "https://i.imgur.com/M3pP5P.webp"}
+      {"nome": "RAP 10", "preco": 16.00, "desc": "Massa fina com frango, queijo, alface e molho", "imagem": "https://images.unsplash.com/photo-1625937135046-5d7a4e9b4a8a?q=80&w=400"},
+      {"nome": "FRANGO KFC", "preco": 18.00, "desc": "10 pedaços de frango empanado crocante", "imagem": "https://images.unsplash.com/photo-1626082927389-6cd097cee6a6?q=80&w=400"},
+      {"nome": "BATATA FRITA", "preco": 12.00, "desc": "Porção de batata frita sequinha 300g", "imagem": "https://images.unsplash.com/photo-1576107232684-1279f390859f?q=80&w=400"},
+      {"nome": "BATATA CHEDDAR E BACON", "preco": 18.00, "desc": "Porção de batata com cheddar e bacon 400g", "imagem": "https://images.unsplash.com/photo-1630384060421-cb20d0fe7d1d?q=80&w=400"}
     ]
   },
   {
     "categoria": "BEBIDAS",
     "itens": [
-      {"nome": "COCA 600ML", "preco": 6.00, "imagem": "https://i.imgur.com/K1rR7R.webp"},
-      {"nome": "COCA 2L", "preco": 10.00, "imagem": "https://i.imgur.com/J0sS8S.webp"},
-      {"nome": "ÁGUA", "preco": 3.00, "imagem": "https://i.imgur.com/I9tT9T.webp"}
+      {"nome": "COCA 600ML", "preco": 6.00, "desc": "Refrigerante Coca-Cola 600ml gelada", "imagem": "https://images.unsplash.com/photo-1553456558-aff11c495cc6?q=80&w=400"},
+      {"nome": "COCA 2L", "preco": 10.00, "desc": "Refrigerante Coca-Cola 2 Litros", "imagem": "https://images.unsplash.com/photo-1553456558-aff11c495cc6?q=80&w=400"},
+      {"nome": "ÁGUA", "preco": 3.00, "desc": "Água mineral 500ml gelada", "imagem": "https://images.unsplash.com/photo-1553456558-aff11c495cc6?q=80&w=400"}
     ]
   }
 ];
@@ -66,7 +58,8 @@ dados.forEach(categoria => {
         <img src="${item.imagem}" alt="${item.nome}">
         <div class="info">
           <h3>${item.nome}</h3>
-          <p>R$ ${item.preco.toFixed(2).replace('.', ',')}</p>
+          <p class="desc">${item.desc}</p>
+          <p class="preco">R$ ${item.preco.toFixed(2).replace('.', ',')}</p>
         </div>
       </div>
     `;
