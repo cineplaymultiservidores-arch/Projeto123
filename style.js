@@ -3,10 +3,13 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 async function carregarMenu() {
+  const menu = document.getElementById('menu');
   try {
-    const res = await fetch('produtos.json');
+    const res = await fetch('./produtos.json'); // <-- MUDEI AQUI
+    
+    if(!res.ok) throw new Error("Arquivo produtos.json não encontrado. Erro: " + res.status);
+    
     const dados = await res.json();
-    const menu = document.getElementById('menu');
 
     // PEGA A LOGO
     const geral = dados.find(c => c.categoria === "GERAL");
@@ -18,15 +21,11 @@ async function carregarMenu() {
     // MONTA O MENU
     dados.forEach(categoria => {
       if (categoria.categoria === "GERAL") return;
-      
       const section = document.createElement('section');
       section.classList.add('categoria');
-      
       let htmlItens = '';
-      
       categoria.itens.forEach(item => {
         if (item.preco === 0) return;
-        
         htmlItens += `
           <div class="item">
             <img src="${item.imagem}" alt="${item.nome}" onerror="this.src='https://i.imgur.com/F6wW2W.webp'">
@@ -37,13 +36,12 @@ async function carregarMenu() {
           </div>
         `;
       });
-
       section.innerHTML = `<h2>${categoria.categoria}</h2>` + htmlItens;
       menu.appendChild(section);
     });
 
   } catch (erro) {
-    console.error("Erro:", erro);
-    document.getElementById('menu').innerHTML = "<p style='text-align:center; padding:20px;'>Erro ao carregar o cardápio 😢</p>";
+    console.error("ERRO:", erro);
+    menu.innerHTML = `<p style='text-align:center; padding:20px; color:red;'>ERRO: ${erro.message}</p>`;
   }
 }
